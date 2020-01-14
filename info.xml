@@ -8,9 +8,9 @@
     <author>Nicolas Ganivet</author>
     <email>nicolas@cividesk.com</email>
   </maintainer>
-  <releaseDate>2018-11-19</releaseDate>
-  <version>1.1.GP2-alpha.1</version>
-  <develStage>alpha</develStage>
+  <releaseDate>2020-01-14</releaseDate>
+  <version>1.1.GP2</version>
+  <develStage>stable</develStage>
   <compatibility>
     <ver>4.2</ver>
     <ver>4.3</ver>
