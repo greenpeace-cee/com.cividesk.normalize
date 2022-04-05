@@ -60,6 +60,12 @@ function normalize_civicrm_enable() {
   // jump to the setup screen after enabling extension
   $session = CRM_Core_Session::singleton();
   $session->replaceUserContext(CRM_Utils_System::url('civicrm/admin/setting/reformat'));
+
+  $extRoot = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
+  if (is_dir($extRoot . 'packages')) {
+    set_include_path($extRoot . 'packages' . PATH_SEPARATOR . get_include_path());
+  }
+
   return _normalize_civix_civicrm_enable();
 }
 
